@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Website title -->
+    <title>TST Paribahan</title>
+    <!-- Website Icon -->
+    <link rel="Website Icon" href="./images/bus-icon.png">
+    <!-- Fontawesome CDN Link -->
+    <script src="https://kit.fontawesome.com/2c7411e5f0.js" crossorigin="anonymous"></script>
+    <!-- Google fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> 
+    <!-- Daisy UI CDN link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <!-- Tailwind CSS CDN link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!---- Custom CSS ---->
+    <link rel="stylesheet" href="styles/style.css">
+    <!---- Custom Tailwind Variables ---->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                'brand-color' : '#1DD100',
+                'dark1' : '#030712',
+                'dark2' : '#030712CC',
+                'dark3' : '#03071299',
+                'dark4' : '#03071280'
+              },
+              backgroundImage: {
+                'hero': "url('./images/banner.png')",
+              }
+            }
+          }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <!-- Navbar Section -->
+        <nav class="custom_container mx-auto">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </div>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                      <li><a class="font-semibold font-raleway hover:text-brand-color">Home</a></li>
+                      <li><a class="font-semibold font-raleway hover:text-brand-color">About</a></li>
+                      <li><a class="font-semibold font-raleway hover:text-brand-color">Services</a></li>
+                      <li><a class="font-semibold font-raleway hover:text-brand-color">Route</a></li>
+                      <li><a class="font-semibold font-raleway hover:text-brand-color">Search</a></li>
+                    </ul>
+                  </div>
+                  <a class="text-2xl font-extrabold font-raleway cursor-pointer">TST <span class="text-brand-color">Paribahan</span></a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1">
+                    <li><a class="font-semibold font-raleway hover:text-brand-color">Home</a></li>
+                    <li><a class="font-semibold font-raleway hover:text-brand-color">About</a></li>
+                    <li><a class="font-semibold font-raleway hover:text-brand-color">Services</a></li>
+                    <li><a class="font-semibold font-raleway hover:text-brand-color">Route</a></li>
+                    <!-- <li><a class="font-semibold font-raleway hover:text-brand-color">Search</a></li> -->
+                  </ul>
+                </div>
+                <div class="navbar-end">
+                  <a class="btn bg-[#1DD1001A] text-brand-color font-bold text-xl border-2 border-brand-color hover:bg-transparent hover:border-brand-color" href="#BuyTicket"> Bus <img src="./images/bus-icon.png" alt="bus icon"></a>
+                </div>
+            </div>
+        </nav>
+        <!-- Banner Section -->
+        <section>
+            <div class="custom_container mx-auto px-4">
+                <div class="w-full h-[550px] bg-hero bg-no-repeat bg-center text-center space-y-5 rounded-2xl p-4">
+                    <h1 class="font-raleway font-extrabold text-3xl md:text-4xl lg:text-5xl text-white pt-20">End-to-End Travel with </h1>
+                    <h2 class="font-raleway font-extrabold text-3xl md:text-4xl lg:text-5xl text-brand-color">TST Paribahan</h2>
+                    <p class="font-inter text-[14px] md:text-[16px] lg:text-lg text-white max-w-[700px] mx-auto">TST Paribahan is a popular transportation company in Bangladesh, primarily known for its bus services. It operates both inter-city and intra-city routes, connecting various destinations across the country.</p>
+                    <a href="#BuyTicket" class="inline-block"><button class="btn bg-brand-color border-none text-lg text-white">Buy Tickets</button></a>
+                </div>
+                <div class="w-full mx-auto flex justify-center flex-wrap gap-5 lg:-mt-[70px]">
+                    <div class="w-[320px] p-8 bg-white rounded-xl border-brand-color border-b-4 flex justify-center items-center gap-6">
+                        <div class="count_icon">
+                            <img src="./images/people.png" alt="people icon">
+                        </div>
+                        <div>
+                            <h4 class="font-inter font-bold text-4xl">500K+</h4>
+                            <p class="font-inter text-lg text-dark3">Registered useres</p>
+                        </div>
+                    </div>
+                    <div class="w-[320px] p-8 bg-white rounded-xl border-brand-color border-b-4 flex justify-center items-center gap-6">
+                        <div class="count_icon">
+                            <img src="./images/ticket-cupon.png" alt="Ticket coupon icon">
+                        </div>
+                        <div>
+                            <h4 class="font-inter font-bold text-4xl">1.7 Lacks</h4>
+                            <p class="font-inter text-lg text-dark3">Tickets sold</p>
+                        </div>
+                    </div>
+                    <div class="w-[320px] p-8 bg-white rounded-xl border-brand-color border-b-4 flex justify-center items-center gap-6">
+                        <div class="count_icon">
+                            <img src="./images/people.png" alt="people icon">
+                        </div>
+                        <div>
+                            <h4 class="font-inter font-bold text-4xl">80K+</h4>
+                            <p class="font-inter text-lg text-dark3">Rental partners</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> 
+    </header>
+    <main>
+        <!-- Offer Section -->
+        <section>
+            <div class="custom_container mx-auto px-4 mt-20 mb-24">
+                <h2 class="font-raleway font-bold text-4xl text-center text-dark1">Best offers for you</h2>
+                <div class="flex justify-center gap-5 mt-12 flex-wrap">
+                    <!-- NEW15 Offer coupon card -->
+                    <div class="w-[570px] h-[220px] bg-[#FFBF0F] rounded-2xl flex justify-between items-center">
+                        <div class="ps-8 md:ps-14 space-y-2">
+                            <h3 class="font-inter font-extrabold text-dark1  text-[30px] md:text-[42px]">15% OFF</h3>
+                            <h4 class="font-inter font-semibold text-base md:text-xl text-dark2">on your next purchase</h4>
+                            <p class="font-inter text-lg text-dark3">use by January 2024</p>
+                        </div>
+                        <div class="h-full w-10 flex flex-col justify-center items-center md:mr-7">
+                            <div class="h-[30px] w-[50px] rounded-b-full bg-white"></div>
+                            <div class="h-[184px] w-[1px] border border-dashed border-white"></div>
+                            <div class="h-[30px] w-[50px] rounded-t-full bg-white"></div>
+                        </div>
+                        <div class="pr-10">
+                            <h3 class="font-raleway font-bold text-3xl text-dark1">NEW15</h3>
+                            <p class="font-raleway font-bold text-lg text-dark3">Coupon Code</p>
+                        </div>
+                    </div>
+                    <!-- Couple 20 offer coupon card -->
+                    <div class="w-[570px] h-[220px] bg-[#F78C9C] rounded-2xl flex justify-between items-center">
+                        <div class="ps-8 md:ps-14 space-y-2">
+                            <h3 class="font-inter font-extrabold text-dark1 text-[30px] md:text-[42px]">20% OFF</h3>
+                            <h4 class="font-inter font-semibold text-xl text-dark2">on your next purchase</h4>
+                            <p class="font-inter text-lg text-dark3">use by January 2024</p>
+                        </div>
+                        <div class="h-full w-10 flex flex-col justify-center items-center">
+                            <div class="h-[30px] w-[50px] rounded-b-full bg-white"></div>
+                            <div class="h-[184px] w-[1px] border border-dashed border-white"></div>
+                            <div class="h-[30px] w-[50px] rounded-t-full bg-white"></div>
+                        </div>
+                        <div class="pr-10">
+                            <h3 class="font-raleway font-bold text-3xl text-dark1">Couple 20</h3>
+                            <p class="font-raleway font-bold text-lg text-dark3">Coupon Code</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn bg-transparent border-2 border-brand-color text-lg font-bold text-brand-color mt-16 mx-auto block hover:bg-brand-color hover:border-transparent hover:text-white">See All Offers</button>
+            </div>
+        </section>
+        <!-- Travels Section -->
+        <section id="BuyTicket" class="max-w-[1300px] mx-auto h-auto rounded-t-[50px] bg-dark-4 border-t-[3px] border-brand-color p-4 bg-[#F7F8F8]">
+            <!-- Bus Information -->
+            <div class="custom_container mx-auto">
+                <div>
+                    <div class="max-w-[730px] mx-auto text-center mt-10">
+                        <h2 class="font-raleway font-bold text-dark1 text-2xl md:text-3xl lg:text-4xl">TST Paribahan</h2>
+                        <p class="font-inter text-sm text-dark3 mt-5">TST Paribahan is a popular transportation company in Bangladesh, primarily known for its bus services. It operates both inter-city and intra-city routes, connecting various destinations across the country. TST Paribahan is recognized for its reliable service and comfortable buses, making it a preferred choice for many travelers.</p>
+                    </div>
+                    <div class="w-full h-auto bg-white rounded-2xl mt-10 flex justify-between items-center flex-col lg:flex-row">
+                        <div class="p-8 w-full lg:w-[80%]">
+                            <div class="flex flex-col justify-center md:flex-row md:justify-between items-center">
+                                <div class="flex justify-center items-center gap-4">
+                                    <div>
+                                        <img src="./images/bus-logo.png" alt="Bus Logo">
+                                    </div>
+                                    <div>
+                                        <h3 class="font-raleway font-bold text-2xl lg:text-3xl text-dark1">TST Paribahan</h3>
+                                        <p class="font-inter font-medium text-base text-dark3">Coach : ST-161 |   NONAC </p>
+                                    </div>
+                                </div>
+                                <div class="w-44 h-12 bg-[#1DD10026] rounded-md flex justify-center items-center mt-5 md:mt-0">
+                                    <p class="font-inter text-base font-bold text-brand-color"> <i class="fa-solid fa-couch"></i> <span id="avaiable_seat"> 40 </span> seat left</p>
+                                </div>
+                            </div>
+                            <div class="p-5 bg-[#F7F8F8] mt-3 rounded-2xl">
+                                <div class="flex justify-between my-5">
+                                    <h3 class="font-raleway font-bold text-xl text-dark3">Route</h3>
+                                    <h4 class="font-raleway font-bold text-xl text-dark2">Dhaka - Kurigram</h4>
+                                </div>
+                                <hr class="border border-dashed border-gray-300">
+                                <div class="flex justify-between my-5">
+                                    <h3 class="font-raleway font-bold text-xl text-dark3">Departure Time</h3>
+                                    <h4 class="font-raleway font-bold text-xl text-dark2">08 : 00 PM</h4>
+                                </div>
+                                <hr class="border border-dashed border-gray-300">
+                                <div class="flex flex-wrap gap-5 justify-center 2xl:justify-between items-center mt-5">
+                                    <div class="w-[260px] px-5 py-4 flex justify-center items-center rounded-lg bg-[#0307120D]">
+                                        <p class="font-inter font-medium text-lg text-dark2">Boarding Point - Dhaka</p>
+                                    </div>
+                                    <div class="w-[260px] px-5 py-4 flex justify-center items-center rounded-lg bg-[#0307120D]">
+                                        <p class="font-inter font-medium text-lg text-dark2">Dropping Point - Kurigram</p>
+                                    </div>
+                                    <div class="w-[260px] px-5 py-4 flex justify-center items-center rounded-lg bg-[#0307120D]">
+                                        <p class="font-inter font-medium text-lg text-dark2">Est. Time - 8 Hour</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-8 w-full lg:w-[20%] flex justify-center lg:justify-start items-center">
+                            <div class="flex flex-col gap-4 justify-center items-center">
+                                <img src="./images/fare.png" alt="fare icon">
+                                <h3 class="font-inter font-bold text-3xl text-dark1 text-center"><span id="single_ticket_price">550</span> Taka</h3>
+                                <p class="font-inter font-medium text-2xl text-dark3">Per seat </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Bus seat info and purchase info -->
+            <div class="custom_container mx-auto mb-20">
+                <div class="w-full p-10 bg-white rounded-2xl mt-6 flex justify-between gap-2 flex-col lg:flex-row">
+                    <div class="lg:w-[55%]">
+                        <div class="space-y-5">
+                            <h3 class="font-raleway font-bold text-2xl text-dark2 mt-2">Select Your seat</h3>
+                            <hr class="border border-dashed border-gray-300">
+                            <div class="flex justify-between items-center">
+                                <p class="font-inter font-medium text-xl text-[#03071280]"><i class="fa-solid fa-couch"></i> Available</p>
+                                <p class="font-inter font-medium text-xl text-brand-color"><i class="fa-solid fa-couch"></i> Selected</p>
+                            </div>
+                            <hr class="border border-dashed border-gray-300">
+                        </div>
+                        <!-- Bus Seat Container -->
+                        <div class="mt-5">
+                            <div class="space-y-4">
+                                <!-- Driver Seat and Door -->
+                                <div class="flex justify-center lg:justify-end items-center">
+                                    <div class="mr-4">
+                                        <h5 class="text-lg font-inter font-semibold text-dark3">Door</h5>
+                                    </div>
+                                    <div class="flex gap-0 sm:gap-[50px]">
+                                        <div class="flex gap-5">
+                                            <button class="w-[50px] sm:w-[60px] md:w-[75px] lg:w-[90px] xl:w-[110px] h-[60px] bg-transparent rounded-lg "></button>
+                                            <button class="w-[50px] sm:w-[60px] md:w-[75px] lg:w-[90px] xl:w-[110px] h-[60px] bg-transparent rounded-lg "></button>
+                                        </div>
+                                        <div class="flex gap-5">
+                                            <button class="w-[50px] sm:w-[60px] md:w-[75px] lg:w-[90px] xl:w-[110px] h-[60px] bg-transparent rounded-lg "></button>
+                                            <button class="w-[50px] sm:w-[60px] md:w-[75px] lg:w-[90px] xl:w-[110px] h-[60px] bg-transparent rounded-lg ">
+                                                <div class="w-[50px] sm:w-[60px] md:w-[75px] lg:w-[90px] xl:w-[110px] h-[60px] bg-[#0307121A] rounded-lg flex justify-center items-center">
+                                                    <img class="h-8 w-8" src="./images/steering-wheel.png" alt="Steering">
+                                                </div>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- A series seat -->
+                                <div class="flex justify-center lg:justify-end items-center">
+                                    <div class="mr-4">
+                                        <h5 class="text-lg font-inter font-semibold text-dark3">A</h5>
+                                    </div>
+                                    <div class="flex gap-7 sm:gap-20">
+                                        <div class="flex gap-2 sm:gap-5">
+                                            <button class="seat cursor-pointer w-[60px] md:w-[75px] lg:w-[90px] xl:w-[110px] h-[60px] bg-[#F7F8F8] rounded-lg flex justify-center items-center text-lg font-inter font-semibold text-dark3">A1</button>
+                                            <button class="seat cursor-pointer w-[60px] md:w-[75px] lg:w-[90px] xl:w-[110px] h-[60px] bg-[#F7F8F8] rounded-lg flex justify-center items-center text-lg font-inter font-semibold text-dark3">A2</button>
+                                        </div>
+                                        <div class="flex gap-2 sm:gap-5">
+                                            <button class="seat cursor-pointer w-[60px] md:w-[75px] lg:w-[90px] xl:w-[110px] h-[60px] bg-[#F7F8F8] rounded-lg flex justify-center items-center text-lg font-inter font-semibold text-dark3">A3</button>
+                                            <button class="seat cursor-pointer w-[60px] md:w-[75px] lg:w-[90px] xl:w-[110px] h-[60px] bg-[#F7F8F8] rounded-lg flex justify-center items-center text-lg font-inter font-semibold text-dark3">A4</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- B series seat -->
+                                <div class=" flex justify-center lg:justify-end items-center">
+                                    <div class="mr-4">
+                                        <h5 class="text-lg font-inter font-semibold text-dark3">B</h5>
+                                    </div>
+                                    <div class="flex gap-7 sm:gap-20">
+                                        <div class="flex gap-2 sm:gap-5">
+                                            <button class="seat cursor-pointer w-[60px] md:w-[75px] lg:w-[90px] xl:w-[110px] h-[60px] bg-[#F7F8F8] rounded-lg flex justify-center items-center text-lg font-inter font-semibold text-dark3">B1</button>
+                                            <button class="seat cursor-pointer w-[60px] md:w-[75px] lg:w-[90px] xl:w-[110px] h-[60px] bg-[#F7F8F8] rounded-lg flex justify-center items-center text-lg font-inter font-semibold text-dark3">B2</button>
+                                        </div>
+                                        <div class="flex gap-2 sm:gap-5">
+                                            <button class="seat cursor-pointer w-[60px] md:w-[75px] lg:w-[90px] xl:w-[110px] h-[60px] bg-[#F7F8F8] rounded-lg flex justify-center items-center text-lg font-inter font-semibold text-dark3">B3</button>
+                                            <button class="seat cursor-pointer w-[60px] md:w-[75px] lg:w-[90px] xl:w-[110px] h-[60px] bg-[#F7F8F8] rounded-lg flex justify-center items-center text-lg font-inter font-semibold text-dark3">B4</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- C series seat -->
+                                <div class=" flex justify-center lg:justify-end items-center">
+                                    <div class="mr-4">
+                                        <h5 class="text-lg font-inter font-semibold text-dark3">C</h5>
+                                    </div>
+                                    <div class="flex gap-7 sm:gap-20">
+                                        <div class="flex gap-2 sm:gap-5">
+                                            <button class="seat cursor-pointer w-[60px] md:w-[75px] lg:w-[90px] xl:w-[110px] h-[60px] bg-[#F7F8F8] rounded-lg flex justify-center items-center text-lg font-inter font-semibold text-dark3">C1</button>
+                                            <button class="seat cursor-pointer w-[60px] md:w-[75px] lg:w-[90px] xl:w-[110px] h-[60px] bg-[#F7F8F8] rounded-lg flex justify-center items-center text-lg font-inter font-semibold text-dark3">C2</button>
+                                        </div>
+                                        <div class="flex gap-2 sm:gap-5">
+                                            <button class="seat cursor-pointer w-[60px] md:w-[75px] lg:w-[90px] xl:w-[110px] h-[60px] bg-[#F7F8F8] rounded-lg flex justify-center items-center text-lg font-inter font-semibold text-dark3">C3</button>
+                                            <button class="seat cursor-pointer w-[60px] md:w-[75px] lg:w-[90px] xl:w-[110px] h-[60px] bg-[#F7F8F8] rounded-lg flex justify-center items-center text-lg font-inter font-semibold text-dark3">C4</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- D series seat -->
+                                <div class=" flex justify-center lg:justify-end items-center">
+                                    <div class="mr-4">
+                                        <h5 class="text-lg font-inter font-semibold text-dark3">D</h5>
+                                    </div>
+                                    <div class="flex gap-7 sm:gap-20">
+                                        <div class="flex gap-2 sm:gap-5">
+                                            <button class="seat cursor-pointer w-[60px] md:w-[75px] lg:w-[90px] xl:w-[110px] h-[60px] bg-[#F7F8F8] rounded-lg flex justify-center items-center text-lg font-inter font-semibold text-dark3">D1</button>
+                                            <button class="seat cursor-pointer w-[60px] md:w-[75px] lg:w-[90px] xl:w-[110px] h-[60px] bg-[#F7F8F8] rounded-lg flex justify-center items-center text-lg font-inter font-semibold text-dark3">D2</button>
+                                        </div>
+                                        <div class="flex gap-2 sm:gap-5">
+                                            <button class="seat cursor-pointer w-[60px] md:w-[75px] lg:w-[90px] xl:w-[110px] h-[60px] bg-[#F7F8F8] rounded-lg flex justify-center items-center text-lg font-inter font-semibold text-dark3">D3</button>
+                                            <button class="seat cursor-pointer w-[60px] md:w-[75px] lg:w-[90px] xl:w-[110px] h-[60px] bg-[#F7F8F8] rounded-lg flex justify-center items-center text-lg font-inter font-semibold text-dark3">D4</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- E series seat -->
+                                <div class=" flex justify-center lg:justify-end items-center">
+                                    <div class="mr-4">
+                                        <h5 class="text-lg font-inter font-semibold text-dark3">E</h5>
+                                    </div>
+                                    <div class="flex gap-7 sm:gap-20">
+                                        <div class="flex gap-2 sm:gap-5">
+                                            <button class="seat cursor-pointer w-[60px] md:w-[75px] lg:w-[90px] xl:w-[110px] h-[60px] bg-[#F7F8F8] rounded-lg flex justify-center items-center text-lg font-inter font-semibold text-dark3">E1</button>
+                                            <button class="seat cursor-pointer w-[60px] md:w-[75px] lg:w-[90px] xl:w-[110px] h-[60px] bg-[#F7F8F8] rounded-lg flex justify-center items-center text-lg font-inter font-semibold text-dark3">E2</button>
+                                        </div>
+                                        <div class="flex gap-2 sm:gap-5">
+                                            <button class="seat cursor-pointer w-[60px] md:w-[75px] lg:w-[90px] xl:w-[110px] h-[60px] bg-[#F7F8F8] rounded-lg flex justify-center items-center text-lg font-inter font-semibold text-dark3">E3</button>
+                                            <button class="seat cursor-pointer w-[60px] md:w-[75px] lg:w-[90px] xl:w-[110px] h-[60px] bg-[#F7F8F8] rounded-lg flex justify-center items-center text-lg font-inter font-semibold text-dark3">E4</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- F series seat -->
+                                <div class=" flex justify-center lg:justify-end items-center">
+                                    <div class="mr-4">
+                                        <h5 class="text-lg font-inter font-semibold text-dark3">F</h5>
+                                    </div>
+                                    <div class="flex gap-7 sm:gap-20">
+                                        <div class="flex gap-2 sm:gap-5">
+                                            <button class="seat cursor-pointer w-[60px] md:w-[75px] lg:w-[90px] xl:w-[110px] h-[60px] bg-[#F7F8F8] rounded-lg flex justify-center items-center text-lg font-inter font-semibold text-dark3">F1</button>
+                                            <button class="seat cursor-pointer w-[60px] md:w-[75px] lg:w-[90px] xl:w-[110px] h-[60px] bg-[#F7F8F8] rounded-lg flex justify-center items-center text-lg font-inter font-semibold text-dark3">F2</button>
+                                        </div>
+                                        <div class="flex gap-2 sm:gap-5">
+                                            <button class="seat cursor-pointer w-[60px] md:w-[75px] lg:w-[90px] xl:w-[110px] h-[60px] bg-[#F7F8F8] rounded-lg flex justify-center items-center text-lg font-inter font-semibold text-dark3">F3</button>
+                                            <button class="seat cursor-pointer w-[60px] md:w-[75px] lg:w-[90px] xl:w-[110px] h-[60px] bg-[#F7F8F8] rounded-lg flex justify-center items-center text-lg font-inter font-semibold text-dark3">F4</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- G series seat -->
+                                <div class=" flex justify-center lg:justify-end items-center">
+                                    <div class="mr-4">
+                                        <h5 class="text-lg font-inter font-semibold text-dark3">G</h5>
+                                    </div>
+                                    <div class="flex gap-7 sm:gap-20">
+                                        <div class="flex gap-2 sm:gap-5">
+                                            <button class="seat cursor-pointer w-[60px] md:w-[75px] lg:w-[90px] xl:w-[110px] h-[60px] bg-[#F7F8F8] rounded-lg flex justify-center items-center text-lg font-inter font-semibold text-dark3">G1</button>
+                                            <button class="seat cursor-pointer w-[60px] md:w-[75px] lg:w-[90px] xl:w-[110px] h-[60px] bg-[#F7F8F8] rounded-lg flex justify-center items-center text-lg font-inter font-semibold text-dark3">G2</button>
+                                        </div>
+                                        <div class="flex gap-2 sm:gap-5">
+                                            <button class="seat cursor-pointer w-[60px] md:w-[75px] lg:w-[90px] xl:w-[110px] h-[60px] bg-[#F7F8F8] rounded-lg flex justify-center items-center text-lg font-inter font-semibold text-dark3">G3</button>
+                                            <button class="seat cursor-pointer w-[60px] md:w-[75px] lg:w-[90px] xl:w-[110px] h-[60px] bg-[#F7F8F8] rounded-lg flex justify-center items-center text-lg font-inter font-semibold text-dark3">G4</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- H series seat -->
+                                <div class=" flex justify-center lg:justify-end items-center">
+                                    <div class="mr-4">
+                                        <h5 class="text-lg font-inter font-semibold text-dark3">H</h5>
+                                    </div>
+                                    <div class="flex gap-7 sm:gap-20">
+                                        <div class="flex gap-2 sm:gap-5">
+                                            <button class="seat cursor-pointer w-[60px] md:w-[75px] lg:w-[90px] xl:w-[110px] h-[60px] bg-[#F7F8F8] rounded-lg flex justify-center items-center text-lg font-inter font-semibold text-dark3">H1</button>
+                                            <button class="seat cursor-pointer w-[60px] md:w-[75px] lg:w-[90px] xl:w-[110px] h-[60px] bg-[#F7F8F8] rounded-lg flex justify-center items-center text-lg font-inter font-semibold text-dark3">H2</button>
+                                        </div>
+                                        <div class="flex gap-2 sm:gap-5">
+                                            <button class="seat cursor-pointer w-[60px] md:w-[75px] lg:w-[90px] xl:w-[110px] h-[60px] bg-[#F7F8F8] rounded-lg flex justify-center items-center text-lg font-inter font-semibold text-dark3">H3</button>
+                                            <button class="seat cursor-pointer w-[60px] md:w-[75px] lg:w-[90px] xl:w-[110px] h-[60px] bg-[#F7F8F8] rounded-lg flex justify-center items-center text-lg font-inter font-semibold text-dark3">H4</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- I series seat -->
+                                <div class=" flex justify-center lg:justify-end items-center">
+                                    <div class="mr-4">
+                                        <h5 class="text-lg font-inter font-semibold text-dark3"> I </h5>
+                                    </div>
+                                    <div class="flex gap-7 sm:gap-20">
+                                        <div class="flex gap-2 sm:gap-5">
+                                            <button class="seat cursor-pointer w-[60px] md:w-[75px] lg:w-[90px] xl:w-[110px] h-[60px] bg-[#F7F8F8] rounded-lg flex justify-center items-center text-lg font-inter font-semibold text-dark3">I1</button>
+                                            <button class="seat cursor-pointer w-[60px] md:w-[75px] lg:w-[90px] xl:w-[110px] h-[60px] bg-[#F7F8F8] rounded-lg flex justify-center items-center text-lg font-inter font-semibold text-dark3">I2</button>
+                                        </div>
+                                        <div class="flex gap-2 sm:gap-5">
+                                            <button class="seat cursor-pointer w-[60px] md:w-[75px] lg:w-[90px] xl:w-[110px] h-[60px] bg-[#F7F8F8] rounded-lg flex justify-center items-center text-lg font-inter font-semibold text-dark3">I3</button>
+                                            <button class="seat cursor-pointer w-[60px] md:w-[75px] lg:w-[90px] xl:w-[110px] h-[60px] bg-[#F7F8F8] rounded-lg flex justify-center items-center text-lg font-inter font-semibold text-dark3">I4</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- J series seat -->
+                                <div class=" flex justify-center lg:justify-end items-center">
+                                    <div class="mr-4">
+                                        <h5 class="text-lg font-inter font-semibold text-dark3">J</h5>
+                                    </div>
+                                    <div class="flex gap-7 sm:gap-20">
+                                        <div class="flex gap-2 sm:gap-5">
+                                            <button class="seat cursor-pointer w-[60px] md:w-[75px] lg:w-[90px] xl:w-[110px] h-[60px] bg-[#F7F8F8] rounded-lg flex justify-center items-center text-lg font-inter font-semibold text-dark3">J1</button>
+                                            <button class="seat cursor-pointer w-[60px] md:w-[75px] lg:w-[90px] xl:w-[110px] h-[60px] bg-[#F7F8F8] rounded-lg flex justify-center items-center text-lg font-inter font-semibold text-dark3">J2</button>
+                                        </div>
+                                        <div class="flex gap-2 sm:gap-5">
+                                            <button class="seat cursor-pointer w-[60px] md:w-[75px] lg:w-[90px] xl:w-[110px] h-[60px] bg-[#F7F8F8] rounded-lg flex justify-center items-center text-lg font-inter font-semibold text-dark3">J3</button>
+                                            <button class="seat cursor-pointer w-[60px] md:w-[75px] lg:w-[90px] xl:w-[110px] h-[60px] bg-[#F7F8F8] rounded-lg flex justify-center items-center text-lg font-inter font-semibold text-dark3">J4</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Ticket purchase information -->
+                    <div class="hidden xl:block h-[980px] border border-gray-300 border-dashed"></div>
+                    <div class="lg:w-45%">
+                        <div class="space-y-5">
+                            <h3 class="font-raleway font-bold text-2xl text-dark2 mt-2">Ticket Details</h3>
+                            <hr class="border border-dashed border-gray-300">
+                        </div>
+                        <div class="p-8 rounded-xl bg-[#F7F8F8] mt-5 w-full">
+                            <div class="flex justify-between lg:gap-[75px] xl:gap-24">
+                                <p class="font-inter font-bold text-xl">seat <sup><span class="px-[10px] py-[5px] rounded-lg bg-brand-color text-white" id="totalSeat">0</span></sup></p>
+                                <p class="font-inter font-bold text-xl">Class</p>
+                                <p class="font-inter font-bold text-xl">Price</p>
+                            </div>
+                            <hr class="border border-dashed border-gray-300 mt-3">
+                            <div id="TicketContainer" class="mt-3"></div>
+                            <hr class="border border-dashed border-gray-300 mt-3">
+                            <div class="flex justify-between mt-4">
+                                <h3 class="font-inter font-bold text-xl">Total Price</h3>
+                                <h4 class="font-inter font-bold text-xl">BDT <span id="total_price">0</span></h4>
+                            </div>
+                            <div id="discount_container">
+
+                            </div>
+                            <div id="discount_input_field" class="mt-4 bg-white rounded-xl p-2 flex justify-between">
+                                <input class=" w-full p-3 placeholder:text-lg placeholder:font-inter focus-visible:outline-none text-xl text-dark2" type="text" placeholder="Have any couppon?" id="coupon_field">
+                                <button class="btn bg-brand-color border-none text-xl font-medium text-white rounded-xl px-5" id="apply_btn" disabled>Apply</button>
+                            </div>
+                            <div class="flex justify-between mt-4">
+                                <h3 class="font-inter font-bold text-xl">Grand Total</h3>
+                                <h4 class="font-inter font-bold text-xl">BDT <span id="grand_total">0</span></h4>
+                            </div>
+                            <div class="mt-10">
+                                    <label class="block mt-5 text-xl font-semibold font-inter" for="name">Passenger Name*</label>
+                                    <input class="w-full px-5 py-4 mt-2 text-lg font-inter font-semibold placeholder:font-inter placeholder:text-lg placeholder:font-normal focus-visible: outline-none" type="text" placeholder="Enter your full name">
+                                    <label class="block mt-5 text-xl font-semibold font-inter" for="name">Phone Number*</label>
+                                    <input id="phone" class="w-full px-5 py-4 mt-2 text-lg font-inter font-semibold placeholder:font-inter placeholder:text-lg placeholder:font-normal focus-visible: outline-none" type="number" placeholder="Enter your phone number" required>
+                                    <label class="block mt-5 text-xl font-semibold font-inter" for="name">Email Address*</label>
+                                    <input class="w-full px-5 py-4 mt-2 text-lg font-inter font-semibold placeholder:font-inter placeholder:text-lg placeholder:font-normal focus-visible: outline-none" type="email" placeholder="Enter your email address" >
+                                    <a href="#BuyTicket"><button id="next_btn" onclick="my_modal_1.showModal()" class="btn w-full rounded-xl bg-brand-color text-lg font-bold text-white mt-5 h-[60px]" disabled> Next </button></a>
+                                <dialog id="my_modal_1" class="modal">
+                                    <div class="modal-box p-10 flex flex-col justify-center items-center">
+                                      <img src="./images/success.png" alt="success">
+                                      <h3 class="font-bold text-lg mt-10">SUCCESS</h3>
+                                      <p class="py-4 text-base text-dark3 font-inter text-center ">Thank you for Booking Our Bus Seats. We are working hard to find the best service and deals for you. Shortly you will find a confirmation in your email.</p>
+                                      <div class="modal-action">
+                                        <form method="dialog">
+                                          <button id="continue" class="btn bg-brand-color block rounded-full text-xl px-20 text-white font-bold">Continue</button>
+                                        </form>
+                                      </div>
+                                    </div>
+                                </dialog>
+                            </div>
+                            <div class="flex justify-between">
+                                <a class="text-[12px] sm:text-lg font-inter inline-block mt-5 text-brand-color underline" href="#">Terms and Conditions</a>
+                                <a class="text-[12px] sm:text-lg font-inter inline-block mt-5 text-brand-color underline" href="#">Cancellation Policy</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="custom_container mx-auto mb-20">
+            </div>
+        </section>
+    </main>
+    <footer class="w-full py-[120px] bg-black">
+        <div class="custom_container mx-auto p-8">
+            <div class="text-white flex flex-col md:flex-row justify-center md:justify-between">
+                <div class="space-y-5">
+                    <h2 class="font-inter font-bold text-3xl">TST Paribahan</h2>
+                    <p class="max-w-[450px] font-inter font-normal text-base">Your ultimate online destination for discovering new places and connecting with a vibrant community of fellow adventurers worldwide</p>
+                </div>
+                <div class="space-y-5 mt-16 md:mt-0">
+                    <h4 class="font-inter text-[22px]">Download our app</h4>
+                    <img src="./images/googleplay.png" alt="Google play icon">
+                </div>
+            </div>
+            <hr class="border border-dashed border-gray-300 my-10">
+            <div class="flex flex-col-reverse lg:flex-row justify-center md:justify-between mt-5 text-white">
+                <p class="font-inter font-medium text-sm md:text-left mt-10 lg:mt-0 inline-block"> &copy; All rights reserved, TST Paribahan limited. 2024 | Design by Tahmid sadik
+                <div class=" flex gap-10 flex-col md:flex-row lg:justify-end">
+                    <a class="font-inter font-medium text-sm" href="#">Terms & condition</a>
+                    <a class="font-inter font-medium text-sm" href="#">Return & refund policy</a>
+                    <a class="font-inter font-medium text-sm" href="#">Privacy policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- JS file link -->
+    <script src="./js/script.js"></script>
+</body>
+</html>
